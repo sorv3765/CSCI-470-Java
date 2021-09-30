@@ -1,0 +1,13 @@
+public class Example_07_09
+{
+  public static void main(String[] args)
+  {
+    int [] ages = {6, 3, 1, 8, 99, 43, 25, 45, 21, 101};
+    
+ //   System.out.println(ages.length);  // print how many ages are in it
+    
+    for(int age: ages)
+      System.out.println(age);
+    
+  }
+}

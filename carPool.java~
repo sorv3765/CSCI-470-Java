@@ -1,0 +1,62 @@
+/************************************************************
+ *                                                          *
+ *  CSCI 470/680     In-Class Exercise 1b      Summer 2018  *                        
+ *                                                          *
+ *  Programmer:  Yiani Poulos                               *  
+ *               Shaniel O Rivas Verdejo                    *
+ *                                                          * 
+ *                                                          *   
+ *                                                          *
+ *  Date Due:    June 26, 2018                              *                          
+ *                                                          *
+ ************************************************************/ 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+public class carPool
+{
+  public static void main(String[] args) throws IOException
+  {
+    double milesInput,
+             gasInput,
+             mpgInput,
+            parkInput,
+            tollInput,
+             sumTotal;
+    
+    DecimalFormat aFormat = new DecimalFormat("$###,###,###.##");
+    
+    Scanner keyScan = new Scanner(System.in);
+    
+    System.out.print("Please total miles driven: ");
+    milesInput = keyScan.nextInt();
+    
+    System.out.print("Price per gallon: ");
+    gasInput = keyScan.nextDouble();
+    
+    System.out.print("Average miles per gallon: ");
+    mpgInput = keyScan.nextInt();
+    
+    System.out.print("What is the parking fee today (if any): ");
+    parkInput = keyScan.nextDouble();
+    
+    System.out.print("What's the tolls (if any): ");
+    tollInput = keyScan.nextDouble();
+    
+    System.out.printf("\n\n\n\nTotal Miles Driven: %36c" + milesInput);
+    System.out.printf("\nThe price per gallon: %36s", aFormat.format(gasInput));
+    System.out.printf("\nYour car MPG is: %36c" + mpgInput);
+    System.out.printf("\nParking fees: %36s", aFormat.format(parkInput));
+    System.out.printf("\nTolls: %36s", aFormat.format(tollInput));
+    
+    sumTotal = ((milesInput/mpgInput)*gasInput) + parkInput + tollInput;
+    
+    System.out.printf("\nTotal cost: %36s", aFormat.format(sumTotal));
+    
+  }
+  
+}
+    
+    

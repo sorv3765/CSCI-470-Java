@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MilesRedemptionsApp
+{
+  public static void main(String [] args)
+  {
+    String filename;
+    
+    Scanner keyScan = new Scanner(System.in);
+    
+    System.out.print("Please enter the name of the file: ");
+    filename = keyScan.next();
+    
+    System.out.println("----------------------------------------------------------------");
+    System.out.println("WELCOME TO THE JAVA AIRLINES FREQUENT FLYER MILES REDEMPTION APP");
+    System.out.println("----------------------------------------------------------------");
+    System.out.println();
+    
+    
+    
+
+    
+    
+  } 
+}

@@ -1,0 +1,34 @@
+/************************************************************
+ *                                                          *
+ *  CSCI 470/680     In-Class Exercise 1       Summer 2018  *                        
+ *                                                          *
+ *  Programmer:  Your name goes here                        *  
+ *               (If you're working in a team, list         *
+ *               names of each team member here with        * 
+ *               team lead's name first.)                   *   
+ *                                                          *
+ *  Date Due:    The exercise due date goes here            *                          
+ *                                                          *
+ ************************************************************/ 
+
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+public class WorldPoulation
+{
+  public static void main(String[] args) throws IOException
+  {
+    int inputUser;
+    
+    final double GROWTH_RATE = 0.0109;
+    
+    Scanner keyScan = new Scanner(System.in);
+    
+    System.out.print("What's the world population now? ");
+    
+    inputUser = keyScan.nextInt();
+    
+    System.out.print("\nPredicted population in a year from now is " + (inputUser*GROWTH_RATE)+inputUser )
+  }
+}

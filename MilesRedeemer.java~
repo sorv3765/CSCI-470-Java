@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+public class MilesRedeemer
+{
+  public void readDestinations(Scanner fileScanner)
+    {
+      String inputUSer:
+        
+      Scanner fileScanner = new Scanner(System.in);
+      
+      System.out.print("What's the destination? ");
+      inputUser = fileScanner.next();
+    }
+    
+    public String[] getCityNames() 
+    {
+      for ( getCityNames() : destination )    //enhanced for loop
+      {
+        System.out.println(destination);     //will print each of the destination
+      }
+    }
+      
+    public String[] redeemMiles(int miles, int month)
+    {
+     private destination = new destination []; 
+     
+     int reMiles = 0;
+    }
+    
+    public int getRemainingMiles()
+    {
+      
+    }
+      
+}
